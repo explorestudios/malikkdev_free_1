@@ -32,7 +32,7 @@ class _DrawerViewState extends State<DrawerView> with WidgetsBindingObserver {
               ? PreferredSize(child: SizedBox(), preferredSize: Size(0, 0))
               : PreferredSize(
                   child: LinearProgressIndicator(),
-                  preferredSize: Size(MediaQuery.of(context).size.width, 3)),
+                  preferredSize: Size(MediaQuery.of(context).size.width, 1)),
         ),
         body: BlocBuilder(
           bloc: BlocProvider.of<ConnectionBloc>(context),

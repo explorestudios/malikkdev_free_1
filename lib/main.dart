@@ -32,6 +32,8 @@ class _SimpleAppState extends State<SimpleApp> {
       print("Connection: $status");
       if (status == DataConnectionStatus.disconnected) {
         _connectionBloc.dispatch(MConnectionEvent.SetDisconnected);
+      }else{
+        _connectionBloc.dispatch(MConnectionEvent.SetConnected);
       }
     });
   }
